@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'PP Mori';
+  src: url('./assets/fonts/PPMori-Regular.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'OGG';
+  src: url('./assets/fonts/Ogg-Regular.otf');
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PP Mori';
+  overflow-x: hidden;
+  background-color: #DAD1BC;
+  color: #3E362E;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0F0A0B;
+}
+
+input, select, textarea, option, button { font-family: 'PP Mori'; }
