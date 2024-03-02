@@ -6,6 +6,7 @@ import Section3 from '../../components/Section3'
 import {Container } from './styles'
 import Section4 from '../../components/Section4'
 import Section5 from '../../components/Section5'
+import Section6 from '../../components/Section6'
 
 
 export default function Main() {
@@ -29,6 +30,7 @@ export default function Main() {
         <Section3 Section2Ref={SectionRef2} />
         <Section4 />
         <Section5 />
+        <Section6 />
       </Container>
     </ReactLenis>
   )
