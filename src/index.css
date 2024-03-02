@@ -34,7 +34,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #0F0A0B;
+  background-color: #ab8867;
 }
 
 input, select, textarea, option, button { font-family: 'PP Mori'; }

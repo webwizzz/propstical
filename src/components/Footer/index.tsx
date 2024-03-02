@@ -14,6 +14,7 @@ function Footer({ theme }: Props) {
 
   const LogoRef = useRef<SVGSVGElement>(null)
   const LogoDivRef = useRef<HTMLDivElement>(null)
+  const LineRef = useRef<HTMLDivElement>(null)
   const MenuRef = useRef<HTMLDivElement>(null)
 
   const [cardHeight, setCardHeight] = useState<number | null>(MenuRef.current ? MenuRef?.current.clientHeight : 0);
@@ -43,9 +44,29 @@ function Footer({ theme }: Props) {
       scrollTrigger: {
           trigger: LogoDivRef.current,
           start: "0% 100%",
-          end: "90% 100%",
+          end: "85% 100%",
           scrub: true,
           toggleActions: "restart none none none",
+          markers: false,
+      }, 
+    })
+
+    gsap.fromTo('.span-link', {
+      x: '128px',
+    }, {
+      ease: Expo.easeInOut,
+      x: '48px',
+      delay: 10,
+      duration: 2,
+      stagger: {
+        amount: 5000,
+      },
+      scrollTrigger: {
+          trigger: LineRef.current,
+          start: "0% 80%",
+          end: "55% 80%",
+          scrub: true,
+          toggleActions: "start none none reverse",
           markers: false,
       }, 
     })
@@ -53,14 +74,14 @@ function Footer({ theme }: Props) {
 
   return (
     <Container className={theme}>
-      <Line>
+      <Line ref={LineRef}>
         <Links>
-          <LinkMenu to="/"><span>Home</span></LinkMenu>
-          <LinkMenu to="/about"><span>About</span></LinkMenu>
-          <LinkMenu to="/building"><span>Building with Kōzōwood</span></LinkMenu>
-          <LinkMenu to="/why"><span>Why Wood</span></LinkMenu>
-          <LinkMenu to="/sustainability"><span>Sustainability</span></LinkMenu>
-          <LinkMenu className='no-border' to="/journal"><span>Journal</span></LinkMenu>
+          <LinkMenu className='link' to="/"><span className='span-link'>Home</span></LinkMenu>
+          <LinkMenu className='link' to="/about"><span className='span-link'>About</span></LinkMenu>
+          <LinkMenu className='link' to="/building"><span className='span-link'>Building with Kōzōwood</span></LinkMenu>
+          <LinkMenu className='link' to="/why"><span className='span-link'>Why Wood</span></LinkMenu>
+          <LinkMenu className='link' to="/sustainability"><span className='span-link'>Sustainability</span></LinkMenu>
+          <LinkMenu className='no-border link' to="/journal"><span className='span-link'>Journal</span></LinkMenu>
         </Links>
         <Col2>
           <div className="top" style={cardHeight ? { height: `${cardHeight / 4.05}px`} : {}}>
