@@ -143,3 +143,158 @@ export const Houses = styled.div`
     
   }
 `;
+
+export const StartDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  gap: 32px;
+  margin-bottom: 12vh;
+
+  h3{
+    font-family: 'PP Mori';
+    color: ${theme.colors.text};
+    line-height: 1.05em;
+    font-weight: 500;
+    font-size: max(26px,calc(22.412px + .92vw));
+    width: 70%;
+
+    span{
+      opacity: 0.5;
+    }
+  }
+
+  button{
+    padding: 20px 32px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: ${theme.colors.terciary};
+    color: ${theme.colors.gray100};
+    border: none;
+    cursor: pointer;
+    border-radius: 32px;
+    color: ${theme.colors.text};
+    font-size: 20px;
+    font-family: 'OGG';
+    letter-spacing: 1px;
+    transition: all .4s ease-in-out;
+
+    span{
+      color: ${theme.colors.gray100};
+      transition: all .4s ease-in-out;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &:hover{
+      transform: scale(104%);
+
+      span{
+        transform: scale(96%);
+      }
+    }
+
+    svg{
+      width: 24px;
+      height: 24px;
+
+      path {
+        fill: ${theme.colors.gray100};
+      }
+    }
+  }
+
+`;
+
+export const Card = styled.div`
+  width: max(480px,calc(424.62px + 14.2vw));
+  background-color: rgba(62,54,46,.08);
+  height: auto;
+  padding: 12px;
+  border-radius: 20px;
+  display: flex;
+  gap: 20px;
+  height: 200px;
+
+  img{
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: center;
+    width: max(140px,calc(119.174px + 5.34vw));
+    min-width: max(140px,calc(119.174px + 5.34vw));
+    height: 100%;
+  }
+
+  div.text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+
+    h4{
+      font-family: 'PP Mori';
+      color: ${theme.colors.text};
+      line-height: 1.2em;
+      font-weight: 500;
+      font-size: max(18px,calc(16.206px + .46vw));
+      margin: 0;
+    }
+
+    p{
+      font-family: 'PP Mori';
+      color: rgba(62,54,46,.7);
+      line-height: 1.3em;
+      font-weight: 500;
+      font-size: max(12px,calc(10.791px + .31vw));
+      margin: 0;
+    }
+
+    button{
+    padding: 16px 24px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: ${theme.colors.terciary};
+    color: ${theme.colors.gray100};
+    border: none;
+    cursor: pointer;
+    border-radius: 32px;
+    color: ${theme.colors.text};
+    font-size: 16px;
+    font-family: 'OGG';
+    letter-spacing: 1px;
+    transition: all .4s ease-in-out;
+
+    span{
+      color: ${theme.colors.gray100};
+      transition: all .4s ease-in-out;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &:hover{
+      transform: scale(104%);
+
+      span{
+        transform: scale(96%);
+      }
+    }
+
+    svg{
+      width: 18px;
+      height: 18px;
+
+      path {
+        fill: ${theme.colors.gray100};
+      }
+    }
+  }
+
+  }
+`;

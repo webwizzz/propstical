@@ -113,7 +113,7 @@ function Section3({ Section2Ref }: { Section2Ref: React.RefObject<HTMLDivElement
         <img src="https://cdn.sanity.io/images/kdijhcxf/develop/2a0e2cd3f7f21348b81860326ef4217836b9e83f-1200x674.jpg" alt="" />
       </Slider>
 
-      <Slider ref={Slider2Ref}>
+      <Slider style={{ alignItems: 'flex-start'}} ref={Slider2Ref}>
         <img src="https://cdn.sanity.io/images/kdijhcxf/develop/8f8662a74cbd1c10131aad053a30ada50a19be40-1228x1534.jpg" alt="" />
         <img src="https://cdn.sanity.io/images/kdijhcxf/develop/8cbbfa457b44020d4ce6db9075a6efa59cc39c37-1200x674.jpg" alt="" />
         <img src="https://cdn.sanity.io/images/kdijhcxf/develop/1014fafe485cd870882889303782223d57829abe-960x720.jpg" alt="" />

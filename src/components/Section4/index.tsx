@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { ReactComponent as Logo } from './../../assets/icons/logo2.svg';
-import { Container, Houses } from './style'
+import { Card, Container, Houses, StartDiv } from './style'
 import gsap, { Expo } from 'gsap';
 import { ScrollTrigger } from "gsap/all";
 
@@ -10,6 +10,7 @@ function Section4() {
 
   const LogoRef = useRef<SVGSVGElement>(null)
   const TextRef = useRef<HTMLHeadingElement>(null)
+  const CardRef = useRef<HTMLDivElement>(null)
   const [selected, setSelected] = useState('')
 
   useEffect(() => {
@@ -39,6 +40,22 @@ function Section4() {
           trigger: TextRef.current,
           start: "-90% 90%",
           end: "110% 90%",
+          scrub: true,
+          toggleActions: "restart none none none",
+          markers: false,
+      }, 
+    })
+
+    gsap.fromTo(CardRef.current, {
+      transform: 'scale(98%)',
+      y: '100'
+    }, {
+      transform: 'scale(100%)',
+      y: 0,
+      scrollTrigger: {
+          trigger: CardRef.current,
+          start: "0% 90%",
+          end: "100% 90%",
           scrub: true,
           toggleActions: "restart none none none",
           markers: false,
@@ -76,6 +93,28 @@ From modular to custom projects, all perfectly sustainable.</h2>
           </button>
         </div>
       </Houses>
+
+
+      <StartDiv>
+        <h3>Flexible delivery: swift or unhurried. <span>Your call.</span></h3>
+        <button>
+          
+          <span><svg data-v-4d231480="" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg" className=""><g data-v-4d231480="" clipPath="url(#clip0_3685_3864)"><path data-v-4d231480="" fillRule="evenodd" clipRule="evenodd" d="M13.8548 6.45748C13.8548 6.45748 13.8548 6.45748 13.8548 6.45748L7.74369 10.1612C6.50598 10.9113 5.75 12.2535 5.75 13.7008V21.3915C5.75 23.6773 7.60305 25.5304 9.88889 25.5304H22.1111C24.3969 25.5304 26.25 23.6773 26.25 21.3915V13.7008C26.25 12.2535 25.494 10.9113 24.2563 10.1612L18.1452 6.45748C18.1452 6.45748 18.1452 6.45748 18.1452 6.45748C16.8266 5.65839 15.1734 5.65839 13.8548 6.45748ZM13.0774 5.17467C14.8738 4.08598 17.1262 4.08598 18.9226 5.17467L25.0337 8.87838C26.7201 9.90037 27.75 11.729 27.75 13.7008V21.3915C27.75 24.5057 25.2253 27.0304 22.1111 27.0304H9.88889C6.77461 27.0304 4.25 24.5057 4.25 21.3915V13.7008C4.25 11.729 5.27996 9.90037 6.96624 8.87838L13.0774 5.17467Z" fill="black"></path><path data-v-4d231480="" fillRule="evenodd" clipRule="evenodd" d="M11.583 21.3914C11.583 20.9772 11.9188 20.6414 12.333 20.6414H19.6663C20.0806 20.6414 20.4163 20.9772 20.4163 21.3914C20.4163 21.8056 20.0806 22.1414 19.6663 22.1414H12.333C11.9188 22.1414 11.583 21.8056 11.583 21.3914Z" fill="black"></path></g><defs data-v-4d231480=""><clipPath data-v-4d231480="" id="clip0_3685_3864"><rect data-v-4d231480="" width="24" height="24" fill="white" transform="translate(4 4.10815)"></rect></clipPath></defs></svg>
+            Start a project</span>
+        </button>
+      </StartDiv>
+
+      <Card ref={CardRef}>
+        <img src="https://cdn.sanity.io/images/kdijhcxf/develop/40283a3f9cfd82d798644a194298b33fd5303649-1334x2000.jpg" alt="" />
+        <div className="text">
+          <h4>Looking for mass timber?</h4>
+          <p>We specialise in researching, developing, and producing mass timber panels and glued laminated beams, offering you the building blocks you need.</p>
+          <button>
+            <span><svg data-v-4d231480="" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg" className=""><g data-v-4d231480="" clipPath="url(#clip0_3685_3864)"><path data-v-4d231480="" fillRule="evenodd" clipRule="evenodd" d="M13.8548 6.45748C13.8548 6.45748 13.8548 6.45748 13.8548 6.45748L7.74369 10.1612C6.50598 10.9113 5.75 12.2535 5.75 13.7008V21.3915C5.75 23.6773 7.60305 25.5304 9.88889 25.5304H22.1111C24.3969 25.5304 26.25 23.6773 26.25 21.3915V13.7008C26.25 12.2535 25.494 10.9113 24.2563 10.1612L18.1452 6.45748C18.1452 6.45748 18.1452 6.45748 18.1452 6.45748C16.8266 5.65839 15.1734 5.65839 13.8548 6.45748ZM13.0774 5.17467C14.8738 4.08598 17.1262 4.08598 18.9226 5.17467L25.0337 8.87838C26.7201 9.90037 27.75 11.729 27.75 13.7008V21.3915C27.75 24.5057 25.2253 27.0304 22.1111 27.0304H9.88889C6.77461 27.0304 4.25 24.5057 4.25 21.3915V13.7008C4.25 11.729 5.27996 9.90037 6.96624 8.87838L13.0774 5.17467Z" fill="black"></path><path data-v-4d231480="" fillRule="evenodd" clipRule="evenodd" d="M11.583 21.3914C11.583 20.9772 11.9188 20.6414 12.333 20.6414H19.6663C20.0806 20.6414 20.4163 20.9772 20.4163 21.3914C20.4163 21.8056 20.0806 22.1414 19.6663 22.1414H12.333C11.9188 22.1414 11.583 21.8056 11.583 21.3914Z" fill="black"></path></g><defs data-v-4d231480=""><clipPath data-v-4d231480="" id="clip0_3685_3864"><rect data-v-4d231480="" width="24" height="24" fill="white" transform="translate(4 4.10815)"></rect></clipPath></defs></svg>
+              Contact us</span>
+          </button>
+        </div>
+      </Card>
     </Container>
   )
 }
