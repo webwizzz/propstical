@@ -96,7 +96,7 @@ export const Slider = styled.div`
     max-height: 35vh;
     width: 240px;
     object-fit: contain;
-    background-color: blue;
+    background-color: ${theme.colors.bg5};
   }
 `;
 
