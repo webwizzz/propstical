@@ -10,6 +10,11 @@
   font-weight: normal;
 }
 
+*::selection{
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
 body {
   margin: 0;
   padding: 0;

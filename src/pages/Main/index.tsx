@@ -7,6 +7,7 @@ import {Container } from './styles'
 import Section4 from '../../components/Section4'
 import Section5 from '../../components/Section5'
 import Section6 from '../../components/Section6'
+import Footer from '../../components/Footer'
 
 
 export default function Main() {
@@ -31,6 +32,7 @@ export default function Main() {
         <Section4 />
         <Section5 />
         <Section6 />
+        <Footer theme='dark' />
       </Container>
     </ReactLenis>
   )
