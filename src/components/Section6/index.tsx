@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger)
 
-function Section6() {
+function Section6({ SectionRef }: { SectionRef: React.RefObject<HTMLDivElement>}) {
   const TextRef = useRef<HTMLHeadingElement>(null)
   const ArticlesRef = useRef<HTMLDivElement>(null)
   const Article1Ref = useRef<HTMLDivElement>(null)
@@ -104,7 +104,7 @@ function Section6() {
   }, [])
 
   return (
-    <Container>
+    <Container ref={SectionRef}>
       <h3 ref={TextRef}>More about us</h3>
       <Articles ref={ArticlesRef}>
         <ArticleLayout ref={Article1Ref}>

@@ -9,8 +9,7 @@ import { theme } from '../../styles/Theme';
 
 gsap.registerPlugin(ScrollTrigger)
 
-function Section3({ Section2Ref }: { Section2Ref: React.RefObject<HTMLDivElement>}) {
-  const SectionRef = useRef<HTMLDivElement>(null)
+function Section3({ Section2Ref, SectionRef }: { SectionRef: React.RefObject<HTMLDivElement>, Section2Ref: React.RefObject<HTMLDivElement>}) {
   const Slider1Ref = useRef<HTMLDivElement>(null)
   const Slider2Ref = useRef<HTMLDivElement>(null)
   const TextRef1 = useRef<HTMLHeadingElement>(null)
