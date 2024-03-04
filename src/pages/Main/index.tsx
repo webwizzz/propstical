@@ -22,6 +22,7 @@ export default function Main() {
   const SectionRef2 = useRef<HTMLDivElement>(null)
   const SectionRef3 = useRef<HTMLDivElement>(null)
   const SectionRef6 = useRef<HTMLDivElement>(null)
+  const FooterRef = useRef<HTMLDivElement>(null)
   const PageRef = useRef<HTMLDivElement>(null)
 
   const lenis = useLenis(({ scroll }: { scroll: any}) => {
@@ -30,6 +31,7 @@ export default function Main() {
 
   const [scrollPosition, setScrollPosition] = useState<number>(0);
   const [theme, setTheme] = useState<string>('dark');
+  const [disable, setDisable] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,6 +57,16 @@ export default function Main() {
           setTheme('dark')
         }
       }
+
+      if (FooterRef.current) {
+        const positionFooter = FooterRef.current.getBoundingClientRect().top + window.scrollY
+
+        if ((position + 56 + 48) >= positionFooter) {
+          setDisable(true)
+        } else {
+          setDisable(false)
+        }
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -70,14 +82,14 @@ export default function Main() {
       duration: 1.2,
     }}>
       <Container ref={PageRef}>
-        <Header theme={theme} HeaderRef={HeaderRef}/>
+        <Header theme={theme} HeaderRef={HeaderRef} disable={disable}/>
         <Section1 />
         <Section2 SectionRef={SectionRef2} />
         <Section3 SectionRef={SectionRef3} Section2Ref={SectionRef2} />
         <Section4 />
         <Section5 />
         <Section6 SectionRef={SectionRef6} />
-        <Footer theme='dark' />
+        <Footer SectionRef={FooterRef} theme='dark' />
       </Container>
     </ReactLenis>
   )

@@ -6,9 +6,9 @@ import { ReactComponent as MusicIcon } from '../../assets/icons/music.svg'
 import Lottie from 'lottie-react'
 import Wave from '../../assets/icons/wave.json'
 
-function Header({ theme, HeaderRef }: { theme: string, HeaderRef: React.RefObject<HTMLDivElement>}) {
+function Header({ theme, HeaderRef, disable }: { disable: boolean, theme: string, HeaderRef: React.RefObject<HTMLDivElement>}) {
   return (
-    <Container className={theme} ref={HeaderRef}>
+    <Container className={disable ? `${theme} disable` : theme} ref={HeaderRef}>
       <Logo />
       <Menu className={theme}>
         <button className="music">

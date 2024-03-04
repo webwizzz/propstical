@@ -8,9 +8,10 @@ gsap.registerPlugin(ScrollTrigger)
 
 interface Props {
   theme?: string
+  SectionRef: React.RefObject<HTMLDivElement>
 }
 
-function Footer({ theme }: Props) {
+function Footer({ theme, SectionRef }: Props) {
 
   const LogoRef = useRef<SVGSVGElement>(null)
   const LogoDivRef = useRef<HTMLDivElement>(null)
@@ -73,7 +74,7 @@ function Footer({ theme }: Props) {
   }, [])
 
   return (
-    <Container className={theme}>
+    <Container ref={SectionRef} className={theme}>
       <Line ref={LineRef}>
         <Links>
           <LinkMenu className='link' to="/"><span className='span-link'>Home</span></LinkMenu>

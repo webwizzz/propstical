@@ -13,6 +13,10 @@ export const Container = styled.header`
   z-index: 999999;
   transition: all .35s cubic-bezier(.165,.84,.44,1);
 
+  &.disable{
+    transform: translateY(-100%);
+  }
+
   svg{
     height: 40px;
     width: 180px;
