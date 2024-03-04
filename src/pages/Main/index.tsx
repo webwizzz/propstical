@@ -42,7 +42,6 @@ export default function Main() {
         const positionDivSection2 = SectionRef2.current.getBoundingClientRect().top + window.scrollY
         const positionDivSection3 = SectionRef3.current.getBoundingClientRect().top + window.scrollY
         const positionDivSection6 = SectionRef6.current.getBoundingClientRect().top + window.scrollY
-     
 
         if ((position) >=  positionDivSection2) {
           setTheme('light')

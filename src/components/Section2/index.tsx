@@ -20,7 +20,7 @@ function Section2({ SectionRef }: { SectionRef: React.RefObject<HTMLDivElement>}
     gsap.fromTo(MaskRef.current, {
       maskSize: '15vw'
     }, {
-      maskSize: '115vw',
+      maskSize: '120vw',
       scrollTrigger: {
           trigger: SectionRef.current,
           start: "10% 15%",
