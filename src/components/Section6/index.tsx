@@ -76,7 +76,7 @@ function Section6() {
       transform: 'scale(100%)',
       scrollTrigger: {
           trigger: ArticlesRef.current,
-          start: "20% 80%",
+          start: "10% 80%",
           end: "90% 80%",
           scrub: true,
           toggleActions: "restart none none none",
@@ -94,7 +94,7 @@ function Section6() {
       transform: 'scale(100%)',
       scrollTrigger: {
           trigger: ArticlesRef.current,
-          start: "20% 80%",
+          start: "10% 80%",
           end: "90% 80%",
           scrub: true,
           toggleActions: "restart none none none",

@@ -34,8 +34,8 @@ export const Container = styled.section`
 
     svg{
       position: absolute;
-      width: auto;
-      height: 20vh;
+      width: 10vw;
+      height: 10vw;
       top: calc(42% - 10vh);
 
       path{

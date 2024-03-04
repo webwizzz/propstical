@@ -23,7 +23,7 @@ function Section2({ SectionRef }: { SectionRef: React.RefObject<HTMLDivElement>}
       maskSize: '115vw',
       scrollTrigger: {
           trigger: SectionRef.current,
-          start: "0% 15%",
+          start: "10% 15%",
           end: "60% 15%",
           scrub: true,
           toggleActions: "restart none none none",
