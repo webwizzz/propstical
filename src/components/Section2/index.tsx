@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react'
-import { Container, VideoContainer } from './style';
-import { ReactComponent as Logo } from '../../assets/icons/logo.svg';
-import gsap, { Expo } from 'gsap';
+import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/all";
+import React, { useEffect, useRef } from 'react';
+import { ReactComponent as Logo } from '../../assets/icons/home.svg';
+import { Container, VideoContainer } from './style';
 gsap.registerPlugin(ScrollTrigger)
 
 
@@ -117,11 +117,11 @@ function Section2({ SectionRef }: { SectionRef: React.RefObject<HTMLDivElement>}
     <Container ref={SectionRef}>
       <VideoContainer ref={VideoContentRef}>
         <video ref={MaskRef} autoPlay loop muted>
-          <source type="video/mp4" src='https://burospaces1.fra1.cdn.digitaloceanspaces.com/kozowood/2023-10-31T17-53-23.385Z-kozowood-industries-teaser-mobile.mp4#t=0.01' />
+          <source type="video/mp4" src='/latitude.mp4#t=0.01' />
         </video>
       </VideoContainer>
 
-      <h1 ref={TextRef}>Wood houses make for sustainable homes.<br/> Let’s unpack the artistry behind them</h1>
+      <h1 ref={TextRef}>Connect with highly-rated designers who are committed to<br/>executing your vision,not theirs.</h1>
       <div className="logo">
         <Logo ref={LogoRef} />
       </div>

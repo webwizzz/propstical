@@ -86,9 +86,9 @@ export default function Main() {
         <Section2 SectionRef={SectionRef2} />
         <Section3 SectionRef={SectionRef3} Section2Ref={SectionRef2} />
         <Section4 />
-        <Section5 />
-        <Section6 SectionRef={SectionRef6} />
-        <Footer SectionRef={FooterRef} theme='dark' />
+        {/* <Section5 /> */}
+        {/* <Section6 SectionRef={SectionRef6} />
+        <Footer SectionRef={FooterRef} theme='dark' /> */}
       </Container>
     </ReactLenis>
   )

@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { theme } from "../../styles/Theme";
 
 export const Container = styled.header`
-  width: calc(100% - 96px);
-  padding: 0 48px;
+  width: calc(100%);
+  padding: 0 36px;
   height: 56px;
   display: flex;
   flex-direction: row;
@@ -19,7 +19,7 @@ export const Container = styled.header`
 
   svg{
     height: 40px;
-    width: 180px;
+    width: 250px;
     transition: all .35s cubic-bezier(.165,.84,.44,1);
 
     path{

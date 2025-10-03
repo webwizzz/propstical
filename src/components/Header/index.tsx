@@ -10,7 +10,7 @@ function Header({ theme, HeaderRef, disable }: { disable: boolean, theme: string
   return (
     <Container className={disable ? `${theme} disable` : theme} ref={HeaderRef}>
       <Logo />
-      <Menu className={theme}>
+      {/* <Menu className={theme}> 
         <button className="music">
           <Lottie loop={true} style={{ height: '28px'}} animationData={Wave} />
         </button>
@@ -18,7 +18,7 @@ function Header({ theme, HeaderRef, disable }: { disable: boolean, theme: string
         <button className="menu">
           <MenuIcon />
         </button>
-      </Menu>
+      </Menu> */}
     </Container>
   )
 }

@@ -9,7 +9,7 @@ export const theme: DefaultTheme = {
     terciary: '#3e362e',
     quartenary: '#ba945a',
     bg5: '#e7decf',
-    text: '#3E362E',
+    text: '#000000ff',
     background: '#DAD1BC',
     gray100: '#EAE7DD',
     backgroundCard: '#9d7c5d7f',

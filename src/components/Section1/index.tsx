@@ -15,8 +15,8 @@ function Section1() {
   const DivRef = useRef<HTMLDivElement>(null)
   
   
-  const URL_VIDEO1 = 'https://burospaces1.fra1.cdn.digitaloceanspaces.com/kozowood/2023-11-09T15-25-13.512Z-muda-teaser-mobile.mp4#t=0.01'
-  const URL_VIDEO2 = 'https://burospaces1.fra1.cdn.digitaloceanspaces.com/kozowood/2023-11-21T12-40-35.388Z-dunas-kozo-v3-mobile.mp4#t=0.01'
+  const URL_VIDEO1 = '/interior1.mp4'
+  const URL_VIDEO2 = '/cozy-interior.mp4'
   
   const [videoSelected, setVideoSelected] = useState<string>(URL_VIDEO1)
 
@@ -102,7 +102,10 @@ function Section1() {
   return (
     <Container ref={SectionRef}>
       <TextContent ref={DivRef}>
-        <h1>Where housing innovation is shaped.</h1>
+        <div>
+        <h1>HOME COMPASS</h1>
+        <p>Mastical Company</p>
+        </div>
         <div className="scroll">
           <span className='animeted'>↓</span>
           <span>SCROLL</span>

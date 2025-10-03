@@ -12,6 +12,7 @@ export const Container = styled.section`
   overflow: hidden;
   z-index: 1;
   margin-bottom: 20vh;
+      text-color: #000000ff;
 
   h1{
     font-weight: 100;
@@ -21,6 +22,7 @@ export const Container = styled.section`
     color: ${theme.colors.primary};
     line-height: 1.08em;
     text-align: center;
+    color: #000000ff;
     z-index: 99999;
   }
 

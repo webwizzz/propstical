@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import aestheticInterior from "../../assets/images/aesthetic_interior.jpg";
+import modernInterior from "../../assets/images/modern_interior.jpg";
 import { theme } from "../../styles/Theme";
 
 export const Container = styled.section`
@@ -134,11 +136,11 @@ export const Houses = styled.div`
     }
 
     &.img1{
-      background-image: url('https://cdn.sanity.io/images/kdijhcxf/develop/8cbbfa457b44020d4ce6db9075a6efa59cc39c37-1200x674.jpg');
+      background-image: url(${modernInterior});
     }
 
     &.img2{
-      background-image: url('https://cdn.sanity.io/images/kdijhcxf/develop/06d9f1f44c212ca727d7b34d61363579f5f068df-1440x1080.jpg');
+      background-image: url(${aestheticInterior});
     }
     
   }

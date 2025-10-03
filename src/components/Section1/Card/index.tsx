@@ -169,16 +169,13 @@ function Card({ setVideo, video, video1, video2 }: Props) {
           <video ref={Video1Ref} autoPlay loop muted>
             <source src={video1} type="video/mp4" />
           </video>
-          <button>
-            <SunIcon />
-            <span>View</span>
-          </button>
+
         </VideoContainer>
 
         <div className="textContent">
-          <h4>COMPORTA</h4>
-          <h1>MUDA RESERVE</h1>
-          <p>Kōzōwood engineered this ambitious project exclusively with mixed mass timber construction techniques.</p>
+          <h4> A LA CARTE ADVICE</h4>
+          <h1>No Commitments</h1>
+          <p>Hire pros for 30-minute consults or specific tasks like sourcing—no full commitments needed.</p>
         </div>
       </div>
 
@@ -187,16 +184,13 @@ function Card({ setVideo, video, video1, video2 }: Props) {
           <video ref={Video2Ref} autoPlay loop muted>
             <source src={video2} type="video/mp4" />
           </video>
-          <button>
-            <SunIcon />
-            <span>View</span>
-          </button>
+
         </VideoContainer>
 
         <div className="textContent">
-          <h4>FEEL AT HOME WITH</h4>
-          <h1>KŌZŌWOOD</h1>
-          <p>Residential and comercial spaces in tune with nature</p>
+          <h4>CREATE YOUR HOME WITH</h4>
+          <h1>PROPSTICAL</h1>
+          <p>Never compromise on your dream again. Our system ensures the customer always has the final say</p>
         </div>
       </div>
 

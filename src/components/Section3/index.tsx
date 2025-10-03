@@ -96,10 +96,10 @@ function Section3({ Section2Ref, SectionRef }: { SectionRef: React.RefObject<HTM
   return (
     <Container ref={SectionRef}>
       <Content>
-        <h1 ref={TextRef1}>Sturdily beautiful.<br/>
-            Warm, bright.<br/>
-            Naturally comforting.<br/>
-            Timelessly modern.</h1>
+        <h1 ref={TextRef1}>Tired of Settling?<br/>
+            Take Back Control.<br/>
+            Get Veto Power.<br/>
+           Never compromise.</h1>
       </Content>
       <Slider ref={Slider1Ref}>
         <img src="https://cdn.sanity.io/images/kdijhcxf/develop/dbb955eecab06d8d21d5c1bf6742571fdd85d17e-2663x1498.jpg" alt="" />
@@ -123,12 +123,12 @@ function Section3({ Section2Ref, SectionRef }: { SectionRef: React.RefObject<HTM
       </Slider>
 
       <Content>
-        <h1 ref={TextRef2}>Effortlessly sustainable.
-          The perfect living space.
-          Built just like in your mind.</h1>
+        <h1 ref={TextRef2}>The perfect living space. 
+           Because your imagination
+          clearly knows best.</h1>
 
           <h3>Things are shaping up.<br/>
-Let’s turn your dream house into <br/>your reality.</h3>
+Let’s turn your doodles<br/>into drywall.</h3>
 
       <button>
         <span><ArrowIcon /></span>
