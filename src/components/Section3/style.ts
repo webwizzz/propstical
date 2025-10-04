@@ -11,8 +11,28 @@ export const Container = styled.section`
   overflow: hidden;
   padding-top: 15vh;
   padding-bottom: 15vh;
+  padding-left: 0;
+  padding-right: 0;
   z-index: 999;
   gap: 20px;
+
+  /* Tablet styles */
+  @media (max-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Small mobile styles */
+  @media (max-width: 480px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Extra small mobile styles */
+  @media (max-width: 320px) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 `;
 
 export const Content = styled.div`
@@ -20,6 +40,21 @@ export const Content = styled.div`
   flex-direction: column;
   width: 60%;
   border-radius: 48px;
+
+  /* Tablet styles */
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+
+  /* Small mobile styles */
+  @media (max-width: 480px) {
+    width: 95%;
+  }
+
+  /* Extra small mobile styles */
+  @media (max-width: 320px) {
+    width: 100%;
+  }
 
   h1{
     font-family: 'OGG';
