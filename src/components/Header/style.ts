@@ -2,14 +2,16 @@ import styled from "styled-components";
 import { theme } from "../../styles/Theme";
 
 export const Container = styled.header`
-  width: calc(100%);
-  padding: 0 36px;
+  width: 100%;
+  padding: 0 20px;
   height: 56px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 999999;
   transition: all .35s cubic-bezier(.165,.84,.44,1);
 
@@ -19,7 +21,7 @@ export const Container = styled.header`
 
   svg{
     height: 40px;
-    width: 250px;
+    width: 180px;
     transition: all .35s cubic-bezier(.165,.84,.44,1);
 
     path{
@@ -36,6 +38,27 @@ export const Container = styled.header`
       path{
         fill: ${theme.colors.primary}
       }
+    }
+  }
+
+  /* Mobile and tablet responsiveness */
+  @media (max-width: 768px) {
+    padding: 0 16px;
+    height: 52px;
+    
+    svg{
+      height: 32px;
+      width: 140px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 12px;
+    height: 48px;
+    
+    svg{
+      height: 28px;
+      width: 120px;
     }
   }
 `;

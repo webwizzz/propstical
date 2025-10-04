@@ -2,14 +2,14 @@ import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/all";
 import { useEffect, useRef, useState } from 'react';
 import WaitlistModal from '../WaitlistModal';
-import { ReactComponent as Logo } from './../../assets/icons/logo23.svg';
+import logo23 from './../../assets/icons/logo23.svg';
 import { Card, Container, Houses, StartDiv } from './style';
 
 gsap.registerPlugin(ScrollTrigger)
 
 function Section4() {
 
-  const LogoRef = useRef<SVGSVGElement>(null)
+  const LogoRef = useRef<HTMLImageElement>(null)
   const TextRef = useRef<HTMLHeadingElement>(null)
   const CardRef = useRef<HTMLDivElement>(null)
   const [selected, setSelected] = useState('')
@@ -70,7 +70,7 @@ function Section4() {
 
   return (
     <Container>
-      <Logo ref={LogoRef} />
+      <img ref={LogoRef} src={logo23} alt="Logo" />
       <h2 ref={TextRef}> We&apos;re building the first design support  <br/>
 platform where your vision is the only priority. Join the Beta and discover a smarter way to build your dream home.</h2>
 
