@@ -40,6 +40,28 @@ export const TextContent = styled.div`
     letter-spacing: -2px;
     color: ${theme.colors.text};
     line-height: 1.08em;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 28px;
+    }
+  }
+
+  p{
+    font-size: 16px;
+    color: ${theme.colors.text};
+    margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
   }
 
   div.scroll {
@@ -54,6 +76,14 @@ export const TextContent = styled.div`
       color: ${theme.colors.text};
       font-weight: 600;
       letter-spacing: .3em;
+
+      @media (max-width: 768px) {
+        font-size: 10px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 9px;
+      }
 
       &.animeted {
         animation: ${Animation} 2s ease-in-out infinite;

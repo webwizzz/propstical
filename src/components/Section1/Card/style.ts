@@ -18,6 +18,14 @@ export const Container = styled.div`
   align-items: center;
   gap: 18px;
 
+  @media (max-width: 768px) {
+    top: calc(15vh);
+  }
+
+  @media (max-width: 480px) {
+    top: calc(26vh);
+  }
+
   div.video{
     min-width: calc(100% - 36px);
     width: calc(100% - 36px);
@@ -44,6 +52,15 @@ export const Container = styled.div`
     margin: 0;
     margin-top: 24px;
     font-weight: 100;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 11px;
+      margin-top: 20px;
+    }
   }
 
   h1{
@@ -54,6 +71,14 @@ export const Container = styled.div`
     margin: 0;
     margin-top: -0px;
     font-weight: 100;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 28px;
+    }
   }
 
   p{
@@ -64,6 +89,15 @@ export const Container = styled.div`
     margin-top: 8px;
     opacity: .5;
     width: 85%;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 13px;
+      width: 90%;
+    }
   }
   }
 `;
@@ -124,6 +158,15 @@ export const ButtonsVideos = styled.div`
   justify-content: space-between;
   position: absolute;
   bottom: 18px;
+
+  @media (max-width: 768px) {
+    bottom: 16px;
+  }
+
+  @media (max-width: 480px) {
+    bottom: 0px;
+    height: 32px;
+  }
 
   button{
     width: 49.99%;

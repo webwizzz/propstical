@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import mask from "../../assets/icons/mask.svg"
+import mask from "../../assets/icons/mask.svg";
 import { theme } from "../../styles/Theme";
 
 export const Container = styled.section`
@@ -12,7 +12,8 @@ export const Container = styled.section`
   overflow: hidden;
   z-index: 1;
   margin-bottom: 20vh;
-      text-color: #000000ff;
+  text-color: #000000ff;
+  padding: 0 5vw;
 
   h1{
     font-weight: 100;
@@ -24,6 +25,49 @@ export const Container = styled.section`
     text-align: center;
     color: #000000ff;
     z-index: 99999;
+    
+    /* Tablet styles */
+    @media (max-width: 1024px) {
+      font-size: 38px;
+      margin-top: 70px;
+      letter-spacing: -1.5px;
+      line-height: 1.1em;
+    }
+    
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      font-size: 28px;
+      margin-top: 50px;
+      letter-spacing: -1px;
+      line-height: 1.2em;
+      padding: 0 4vw;
+    }
+    
+    /* Small mobile styles */
+    @media (max-width: 480px) {
+      font-size: 22px;
+      margin-top: 40px;
+      letter-spacing: -0.5px;
+      line-height: 1.25em;
+      padding: 0 6vw;
+    }
+  }
+
+  /* Responsive padding for different screen sizes */
+  @media (max-width: 1024px) {
+    padding: 0 4vw;
+  }
+  
+  @media (max-width: 768px) {
+    padding: 0 3vw;
+    height: 100vh;
+    margin-bottom: 15vh;
+  }
+  
+  @media (max-width: 480px) {
+    padding: 0 2vw;
+    height: 90vh;
+    margin-bottom: 10vh;
   }
 
   div.logo{
@@ -43,6 +87,27 @@ export const Container = styled.section`
       path{
         fill: ${theme.colors.terciary};
       }
+      
+      /* Tablet styles */
+      @media (max-width: 1024px) {
+        width: 12vw;
+        height: 12vw;
+        top: calc(45% - 8vh);
+      }
+      
+      /* Mobile styles */
+      @media (max-width: 768px) {
+        width: 15vw;
+        height: 15vw;
+        top: calc(48% - 6vh);
+      }
+      
+      /* Small mobile styles */
+      @media (max-width: 480px) {
+        width: 18vw;
+        height: 18vw;
+        top: calc(50% - 5vh);
+      }
     }
   }
 
@@ -55,6 +120,27 @@ export const Container = styled.section`
     width: 256px;
     mask-repeat: no-repeat;
     transform: scale(500%);
+    
+    /* Tablet styles */
+    @media (max-width: 1024px) {
+      height: 200px;
+      width: 200px;
+      transform: scale(400%);
+    }
+    
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      height: 150px;
+      width: 150px;
+      transform: scale(300%);
+    }
+    
+    /* Small mobile styles */
+    @media (max-width: 480px) {
+      height: 120px;
+      width: 120px;
+      transform: scale(250%);
+    }
   }
 `;
 
@@ -73,6 +159,23 @@ export const VideoContainer = styled.div`
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: 108px;
+    
+    /* Tablet styles */
+    @media (max-width: 1024px) {
+      mask-size: 96px;
+    }
+    
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      mask-size: 80px;
+      height: 90vh;
+    }
+    
+    /* Small mobile styles */
+    @media (max-width: 480px) {
+      mask-size: 64px;
+      height: 85vh;
+    }
   }
 
   div.mask {
@@ -83,8 +186,34 @@ export const VideoContainer = styled.div`
     mask-repeat: no-repeat;
     mask-size: 20px;
     transform: scale(200%);
+    
+    /* Tablet styles */
+    @media (max-width: 1024px) {
+      mask-size: 18px;
+      transform: scale(180%);
+    }
+    
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      mask-size: 15px;
+      transform: scale(150%);
+    }
+    
+    /* Small mobile styles */
+    @media (max-width: 480px) {
+      mask-size: 12px;
+      transform: scale(120%);
+    }
   }
   
+  /* Container responsiveness */
+  @media (max-width: 768px) {
+    height: 90vh;
+  }
+  
+  @media (max-width: 480px) {
+    height: 85vh;
+  }
 `;
 
 export const Mask = styled.div`
@@ -94,5 +223,23 @@ export const Mask = styled.div`
   border-radius: 50%;
   overflow: hidden;
   z-index: 999;
+  
+  /* Tablet styles */
+  @media (max-width: 1024px) {
+    width: 280px;
+    height: 280px;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    width: 240px;
+    height: 240px;
+  }
+  
+  /* Small mobile styles */
+  @media (max-width: 480px) {
+    width: 200px;
+    height: 200px;
+  }
 `;
 
