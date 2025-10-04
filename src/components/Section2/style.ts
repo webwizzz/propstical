@@ -5,16 +5,17 @@ import { theme } from "../../styles/Theme";
 export const Container = styled.section`
   width: 100%;
   max-width: 100vw;
-  height: 90vh;
+  height: 100vh;
   background-color: ${theme.colors.terciary};
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
   z-index: 1;
-  margin-bottom: 15vh;
+  margin-bottom: vh;
   text-color: #000000ff;
   padding: 0 4vw;
+  overflow: hidden;
 
   h1{
     font-weight: 100;
@@ -43,7 +44,7 @@ export const Container = styled.section`
       margin-top: 40px;
       letter-spacing: -1px;
       line-height: 1.2em;
-      max-width: 90%;
+      max-width: 100%;
     }
     
     /* Small mobile styles */
@@ -52,31 +53,32 @@ export const Container = styled.section`
       margin-top: 30px;
       letter-spacing: -0.5px;
       line-height: 1.25em;
-      max-width: 95%;
+      max-width: 100%;
+     
     }
   }
 
   /* Responsive padding and height for different screen sizes */
   @media (max-width: 1024px) {
     padding: 0 3vw;
-    height: 85vh;
+    height: 100vh;
     margin-bottom: 12vh;
   }
   
   @media (max-width: 768px) {
     padding: 0 2vw;
-    height: 80vh;
+    height: 100vh;
     margin-bottom: 10vh;
   }
   
   @media (max-width: 480px) {
     padding: 0 1vw;
-    height: 75vh;
+    height: 100vh;
     margin-bottom: 8vh;
   }
 
   @media (max-width: 320px) {
-    height: 70vh;
+    height: 100vh;
     margin-bottom: 6vh;
     padding: 0 1vw;
   }
